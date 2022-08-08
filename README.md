@@ -1,4 +1,4 @@
-# Dart GTFS-realtime Language Bindings
+# Dart GTFS-Realtime Language Bindings
 
 Provides Dart classes generated from the GTFS-realtime Protocol Buffer specification. These classes
 will allow you to parse a binary Protocol Buffer GTFS-realtime data feed into Dart or Flutter.
