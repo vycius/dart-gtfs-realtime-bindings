@@ -1,0 +1,48 @@
+name: update_and_publish
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate GTFS-Realtime bindings
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - run: curl https://raw.githubusercontent.com/google/transit/master/gtfs-realtime/proto/gtfs-realtime.proto --output gtfs-realtime.proto
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+
+      - run: dart --version
+      - run: flutter --version
+
+      - run: flutter pub get
+          -
+      - run: dart pub global activate protoc_plugin
+
+      - run: protoc --dart_out=lib/src gtfs-realtime.proto
+
+      - run: flutter analyze
+
+      - run: flutter test
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          message: Update GTFS-Realtime bindings
+          empty: true
+
+      
