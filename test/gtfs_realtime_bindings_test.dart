@@ -11,7 +11,8 @@ void main() {
       final feedMessage = FeedMessage.fromBuffer(bytes);
 
       final vehicleEntities = feedMessage.entity.where((e) => e.hasVehicle());
-      final tripUpdateEntities = feedMessage.entity.where((e) => e.hasTripUpdate());
+      final tripUpdateEntities =
+          feedMessage.entity.where((e) => e.hasTripUpdate());
 
       expect(feedMessage.header.gtfsRealtimeVersion, '2.0');
       expect(vehicleEntities.length, 311);
