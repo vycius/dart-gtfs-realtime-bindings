@@ -9,7 +9,6 @@ The following code snippet demonstrates downloading a GTFS-realtime data feed fr
 parsing it as a FeedMessage (the root type of the GTFS-realtime schema).
 
 ```dart
-
 final url = Uri.parse('URL of your GTFS Realtime feed');
 final response = await http.get(url);
 
