@@ -11,16 +11,13 @@ parsing it as a FeedMessage (the root type of the GTFS-realtime schema).
 ```dart
 
 final url = Uri.parse('URL of your GTFS Realtime feed');
-final response = await
-http.get(url);
+final response = await http.get(url);
 
-if
-(
-response.statusCode == 200) {
-final feedMessage = FeedMessage.fromBuffer(response.bodyBytes);
+if (response.statusCode == 200) {
+  final feedMessage = FeedMessage.fromBuffer(response.bodyBytes);
 
-print('Number of entities: ${feedMessage.entity.length}.');
+  print('Number of entities: ${feedMessage.entity.length}.');
 } else {
-print('Request failed with status: ${response.statusCode}.');
+  print('Request failed with status: ${response.statusCode}.');
 }
 ```
