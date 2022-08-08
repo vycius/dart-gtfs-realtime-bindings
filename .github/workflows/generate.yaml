@@ -14,29 +14,35 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
           fetch-depth: 0
 
-      - run: curl https://raw.githubusercontent.com/google/transit/master/gtfs-realtime/proto/gtfs-realtime.proto --output gtfs-realtime.proto
+      - name: Setup Dart
+        uses: dart-lang/setup-dart@v1.3
 
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
+      - name: Check Dart version
+        run: dart --version
 
-      - run: dart --version
-      - run: flutter --version
+      - name: Download newest GTFS-Realtime contract
+        run: curl https://raw.githubusercontent.com/google/transit/master/gtfs-realtime/proto/gtfs-realtime.proto --output gtfs-realtime.proto
 
-      - run: flutter pub get
-          -
-      - run: dart pub global activate protoc_plugin
+      - name: Install protoc_plugin plugin
+        run: dart pub global activate protoc_plugin
 
-      - run: protoc --dart_out=lib/src gtfs-realtime.proto
+      - name: Generate dart GTFS-Realtime bindings
+        run: protoc --dart_out=lib/src gtfs-realtime.proto
 
-      - run: flutter analyze
+      - name: Install dependencies
+        run: dart pub get
 
-      - run: flutter test
+      - name: Analyze
+        run: dart analyze
+
+      - name: Test
+        run: dart test
 
       - name: Commit & Push changes
         uses: actions-js/push@master
@@ -45,4 +51,3 @@ jobs:
           message: Update GTFS-Realtime bindings
           empty: true
 
-      
