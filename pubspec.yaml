@@ -1,6 +1,6 @@
 name: gtfs_realtime_bindings
 description: Provides Dart classes generated from the GTFS-realtime Protocol Buffer specification.
-version: 1.0.0
+version: 1.0.1
 repository: https://github.com/vycius/dart-gtfs-realtime-bindings/
 
 environment:
