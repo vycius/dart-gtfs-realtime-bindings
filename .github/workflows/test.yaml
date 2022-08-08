@@ -1,4 +1,4 @@
-name: update_and_publish
+name: Test
 
 on:
   pull_request:
