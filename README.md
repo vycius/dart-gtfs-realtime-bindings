@@ -20,3 +20,11 @@ if (response.statusCode == 200) {
   print('Request failed with status: ${response.statusCode}.');
 }
 ```
+
+## Generation
+
+The Protobuf spec is downloaded from <https://gtfs.org/realtime/proto/>.
+
+The Dart code is generated using: `protoc --dart_out=lib/src gtfs-realtime.proto`
+
+Note that this requires installing the binaries at <https://protobuf.dev/getting-started/darttutorial/#compiling-protocol-buffers>.
