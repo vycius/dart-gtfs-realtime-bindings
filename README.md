@@ -42,6 +42,6 @@ final mtaStopTimeUpdate = stopTimeUpdate
 
 The Protobuf spec is downloaded from <https://gtfs.org/realtime/proto/>.
 
-The Dart code is generated using: `protoc --dart_out=lib/src gtfs-realtime.proto`
+The Dart code is generated using: `protoc --dart_out=lib/src gtfs-realtime.proto new-york-mta-extension.proto`
 
 Note that this requires installing the binaries at <https://protobuf.dev/getting-started/darttutorial/#compiling-protocol-buffers>.
