@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:gtfs_realtime_bindings/gtfs_realtime_bindings.dart';
-import 'package:gtfs_realtime_bindings/src/new-york-mta-extension.pb.dart';
 import 'package:protobuf/protobuf.dart';
 import 'package:test/test.dart';
 
