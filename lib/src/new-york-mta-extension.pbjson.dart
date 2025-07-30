@@ -23,20 +23,47 @@ const MtaRailroadStopTimeUpdate$json = {
 };
 
 /// Descriptor for `MtaRailroadStopTimeUpdate`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List mtaRailroadStopTimeUpdateDescriptor = $convert.base64Decode(
-    'ChlNdGFSYWlscm9hZFN0b3BUaW1lVXBkYXRlEhQKBXRyYWNrGAEgASgJUgV0cmFjaxIgCgt0cm'
-    'FpblN0YXR1cxgCIAEoCVILdHJhaW5TdGF0dXM=');
+final $typed_data.Uint8List mtaRailroadStopTimeUpdateDescriptor =
+    $convert.base64Decode(
+        'ChlNdGFSYWlscm9hZFN0b3BUaW1lVXBkYXRlEhQKBXRyYWNrGAEgASgJUgV0cmFjaxIgCgt0cm'
+        'FpblN0YXR1cxgCIAEoCVILdHJhaW5TdGF0dXM=');
 
 @$core.Deprecated('Use mtaRailroadCarriageDetailsDescriptor instead')
 const MtaRailroadCarriageDetails$json = {
   '1': 'MtaRailroadCarriageDetails',
   '2': [
-    {'1': 'bicycles_allowed', '3': 1, '4': 1, '5': 5, '7': '0', '10': 'bicyclesAllowed'},
+    {
+      '1': 'bicycles_allowed',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '7': '0',
+      '10': 'bicyclesAllowed'
+    },
     {'1': 'carriage_class', '3': 2, '4': 1, '5': 9, '10': 'carriageClass'},
-    {'1': 'quiet_carriage', '3': 3, '4': 1, '5': 14, '6': '.transit_realtime.MtaRailroadCarriageDetails.QuietCarriage', '7': 'UNKNOWN_QUIET_CARRIAGE', '10': 'quietCarriage'},
-    {'1': 'toilet_facilities', '3': 4, '4': 1, '5': 14, '6': '.transit_realtime.MtaRailroadCarriageDetails.ToiletFacilities', '7': 'UNKNOWN_TOILET_FACILITIES', '10': 'toiletFacilities'},
+    {
+      '1': 'quiet_carriage',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.MtaRailroadCarriageDetails.QuietCarriage',
+      '7': 'UNKNOWN_QUIET_CARRIAGE',
+      '10': 'quietCarriage'
+    },
+    {
+      '1': 'toilet_facilities',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.MtaRailroadCarriageDetails.ToiletFacilities',
+      '7': 'UNKNOWN_TOILET_FACILITIES',
+      '10': 'toiletFacilities'
+    },
   ],
-  '4': [MtaRailroadCarriageDetails_QuietCarriage$json, MtaRailroadCarriageDetails_ToiletFacilities$json],
+  '4': [
+    MtaRailroadCarriageDetails_QuietCarriage$json,
+    MtaRailroadCarriageDetails_ToiletFacilities$json
+  ],
 };
 
 @$core.Deprecated('Use mtaRailroadCarriageDetailsDescriptor instead')
@@ -71,4 +98,3 @@ final $typed_data.Uint8List mtaRailroadCarriageDetailsDescriptor = $convert.base
     'USGgoWVU5LTk9XTl9RVUlFVF9DQVJSSUFHRRAAEhIKDlFVSUVUX0NBUlJJQUdFEAESFgoSTk9U'
     'X1FVSUVUX0NBUlJJQUdFEAIiXAoQVG9pbGV0RmFjaWxpdGllcxIdChlVTktOT1dOX1RPSUxFVF'
     '9GQUNJTElUSUVTEAASEgoOVE9JTEVUX09OQk9BUkQQARIVChFOT19UT0lMRVRfT05CT0FSRBAC');
-
