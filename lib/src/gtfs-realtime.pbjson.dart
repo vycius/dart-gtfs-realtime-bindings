@@ -17,8 +17,22 @@ import 'dart:typed_data' as $typed_data;
 const FeedMessage$json = {
   '1': 'FeedMessage',
   '2': [
-    {'1': 'header', '3': 1, '4': 2, '5': 11, '6': '.transit_realtime.FeedHeader', '10': 'header'},
-    {'1': 'entity', '3': 2, '4': 3, '5': 11, '6': '.transit_realtime.FeedEntity', '10': 'entity'},
+    {
+      '1': 'header',
+      '3': 1,
+      '4': 2,
+      '5': 11,
+      '6': '.transit_realtime.FeedHeader',
+      '10': 'header'
+    },
+    {
+      '1': 'entity',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.FeedEntity',
+      '10': 'entity'
+    },
   ],
   '5': [
     {'1': 1000, '2': 2000},
@@ -36,8 +50,22 @@ final $typed_data.Uint8List feedMessageDescriptor = $convert.base64Decode(
 const FeedHeader$json = {
   '1': 'FeedHeader',
   '2': [
-    {'1': 'gtfs_realtime_version', '3': 1, '4': 2, '5': 9, '10': 'gtfsRealtimeVersion'},
-    {'1': 'incrementality', '3': 2, '4': 1, '5': 14, '6': '.transit_realtime.FeedHeader.Incrementality', '7': 'FULL_DATASET', '10': 'incrementality'},
+    {
+      '1': 'gtfs_realtime_version',
+      '3': 1,
+      '4': 2,
+      '5': 9,
+      '10': 'gtfsRealtimeVersion'
+    },
+    {
+      '1': 'incrementality',
+      '3': 2,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.FeedHeader.Incrementality',
+      '7': 'FULL_DATASET',
+      '10': 'incrementality'
+    },
     {'1': 'timestamp', '3': 3, '4': 1, '5': 4, '10': 'timestamp'},
   ],
   '4': [FeedHeader_Incrementality$json],
@@ -69,13 +97,62 @@ const FeedEntity$json = {
   '1': 'FeedEntity',
   '2': [
     {'1': 'id', '3': 1, '4': 2, '5': 9, '10': 'id'},
-    {'1': 'is_deleted', '3': 2, '4': 1, '5': 8, '7': 'false', '10': 'isDeleted'},
-    {'1': 'trip_update', '3': 3, '4': 1, '5': 11, '6': '.transit_realtime.TripUpdate', '10': 'tripUpdate'},
-    {'1': 'vehicle', '3': 4, '4': 1, '5': 11, '6': '.transit_realtime.VehiclePosition', '10': 'vehicle'},
-    {'1': 'alert', '3': 5, '4': 1, '5': 11, '6': '.transit_realtime.Alert', '10': 'alert'},
-    {'1': 'shape', '3': 6, '4': 1, '5': 11, '6': '.transit_realtime.Shape', '10': 'shape'},
-    {'1': 'stop', '3': 7, '4': 1, '5': 11, '6': '.transit_realtime.Stop', '10': 'stop'},
-    {'1': 'trip_modifications', '3': 8, '4': 1, '5': 11, '6': '.transit_realtime.TripModifications', '10': 'tripModifications'},
+    {
+      '1': 'is_deleted',
+      '3': 2,
+      '4': 1,
+      '5': 8,
+      '7': 'false',
+      '10': 'isDeleted'
+    },
+    {
+      '1': 'trip_update',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate',
+      '10': 'tripUpdate'
+    },
+    {
+      '1': 'vehicle',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.VehiclePosition',
+      '10': 'vehicle'
+    },
+    {
+      '1': 'alert',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.Alert',
+      '10': 'alert'
+    },
+    {
+      '1': 'shape',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.Shape',
+      '10': 'shape'
+    },
+    {
+      '1': 'stop',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.Stop',
+      '10': 'stop'
+    },
+    {
+      '1': 'trip_modifications',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripModifications',
+      '10': 'tripModifications'
+    },
   ],
   '5': [
     {'1': 1000, '2': 2000},
@@ -98,14 +175,46 @@ final $typed_data.Uint8List feedEntityDescriptor = $convert.base64Decode(
 const TripUpdate$json = {
   '1': 'TripUpdate',
   '2': [
-    {'1': 'trip', '3': 1, '4': 2, '5': 11, '6': '.transit_realtime.TripDescriptor', '10': 'trip'},
-    {'1': 'vehicle', '3': 3, '4': 1, '5': 11, '6': '.transit_realtime.VehicleDescriptor', '10': 'vehicle'},
-    {'1': 'stop_time_update', '3': 2, '4': 3, '5': 11, '6': '.transit_realtime.TripUpdate.StopTimeUpdate', '10': 'stopTimeUpdate'},
+    {
+      '1': 'trip',
+      '3': 1,
+      '4': 2,
+      '5': 11,
+      '6': '.transit_realtime.TripDescriptor',
+      '10': 'trip'
+    },
+    {
+      '1': 'vehicle',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.VehicleDescriptor',
+      '10': 'vehicle'
+    },
+    {
+      '1': 'stop_time_update',
+      '3': 2,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate.StopTimeUpdate',
+      '10': 'stopTimeUpdate'
+    },
     {'1': 'timestamp', '3': 4, '4': 1, '5': 4, '10': 'timestamp'},
     {'1': 'delay', '3': 5, '4': 1, '5': 5, '10': 'delay'},
-    {'1': 'trip_properties', '3': 6, '4': 1, '5': 11, '6': '.transit_realtime.TripUpdate.TripProperties', '10': 'tripProperties'},
+    {
+      '1': 'trip_properties',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate.TripProperties',
+      '10': 'tripProperties'
+    },
   ],
-  '3': [TripUpdate_StopTimeEvent$json, TripUpdate_StopTimeUpdate$json, TripUpdate_TripProperties$json],
+  '3': [
+    TripUpdate_StopTimeEvent$json,
+    TripUpdate_StopTimeUpdate$json,
+    TripUpdate_TripProperties$json
+  ],
   '5': [
     {'1': 1000, '2': 2000},
     {'1': 9000, '2': 10000},
@@ -132,11 +241,47 @@ const TripUpdate_StopTimeUpdate$json = {
   '2': [
     {'1': 'stop_sequence', '3': 1, '4': 1, '5': 13, '10': 'stopSequence'},
     {'1': 'stop_id', '3': 4, '4': 1, '5': 9, '10': 'stopId'},
-    {'1': 'arrival', '3': 2, '4': 1, '5': 11, '6': '.transit_realtime.TripUpdate.StopTimeEvent', '10': 'arrival'},
-    {'1': 'departure', '3': 3, '4': 1, '5': 11, '6': '.transit_realtime.TripUpdate.StopTimeEvent', '10': 'departure'},
-    {'1': 'departure_occupancy_status', '3': 7, '4': 1, '5': 14, '6': '.transit_realtime.VehiclePosition.OccupancyStatus', '10': 'departureOccupancyStatus'},
-    {'1': 'schedule_relationship', '3': 5, '4': 1, '5': 14, '6': '.transit_realtime.TripUpdate.StopTimeUpdate.ScheduleRelationship', '7': 'SCHEDULED', '10': 'scheduleRelationship'},
-    {'1': 'stop_time_properties', '3': 6, '4': 1, '5': 11, '6': '.transit_realtime.TripUpdate.StopTimeUpdate.StopTimeProperties', '10': 'stopTimeProperties'},
+    {
+      '1': 'arrival',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate.StopTimeEvent',
+      '10': 'arrival'
+    },
+    {
+      '1': 'departure',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate.StopTimeEvent',
+      '10': 'departure'
+    },
+    {
+      '1': 'departure_occupancy_status',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehiclePosition.OccupancyStatus',
+      '10': 'departureOccupancyStatus'
+    },
+    {
+      '1': 'schedule_relationship',
+      '3': 5,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.TripUpdate.StopTimeUpdate.ScheduleRelationship',
+      '7': 'SCHEDULED',
+      '10': 'scheduleRelationship'
+    },
+    {
+      '1': 'stop_time_properties',
+      '3': 6,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripUpdate.StopTimeUpdate.StopTimeProperties',
+      '10': 'stopTimeProperties'
+    },
   ],
   '3': [TripUpdate_StopTimeUpdate_StopTimeProperties$json],
   '4': [TripUpdate_StopTimeUpdate_ScheduleRelationship$json],
@@ -217,20 +362,86 @@ final $typed_data.Uint8List tripUpdateDescriptor = $convert.base64Decode(
 const VehiclePosition$json = {
   '1': 'VehiclePosition',
   '2': [
-    {'1': 'trip', '3': 1, '4': 1, '5': 11, '6': '.transit_realtime.TripDescriptor', '10': 'trip'},
-    {'1': 'vehicle', '3': 8, '4': 1, '5': 11, '6': '.transit_realtime.VehicleDescriptor', '10': 'vehicle'},
-    {'1': 'position', '3': 2, '4': 1, '5': 11, '6': '.transit_realtime.Position', '10': 'position'},
-    {'1': 'current_stop_sequence', '3': 3, '4': 1, '5': 13, '10': 'currentStopSequence'},
+    {
+      '1': 'trip',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripDescriptor',
+      '10': 'trip'
+    },
+    {
+      '1': 'vehicle',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.VehicleDescriptor',
+      '10': 'vehicle'
+    },
+    {
+      '1': 'position',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.Position',
+      '10': 'position'
+    },
+    {
+      '1': 'current_stop_sequence',
+      '3': 3,
+      '4': 1,
+      '5': 13,
+      '10': 'currentStopSequence'
+    },
     {'1': 'stop_id', '3': 7, '4': 1, '5': 9, '10': 'stopId'},
-    {'1': 'current_status', '3': 4, '4': 1, '5': 14, '6': '.transit_realtime.VehiclePosition.VehicleStopStatus', '7': 'IN_TRANSIT_TO', '10': 'currentStatus'},
+    {
+      '1': 'current_status',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehiclePosition.VehicleStopStatus',
+      '7': 'IN_TRANSIT_TO',
+      '10': 'currentStatus'
+    },
     {'1': 'timestamp', '3': 5, '4': 1, '5': 4, '10': 'timestamp'},
-    {'1': 'congestion_level', '3': 6, '4': 1, '5': 14, '6': '.transit_realtime.VehiclePosition.CongestionLevel', '10': 'congestionLevel'},
-    {'1': 'occupancy_status', '3': 9, '4': 1, '5': 14, '6': '.transit_realtime.VehiclePosition.OccupancyStatus', '10': 'occupancyStatus'},
-    {'1': 'occupancy_percentage', '3': 10, '4': 1, '5': 13, '10': 'occupancyPercentage'},
-    {'1': 'multi_carriage_details', '3': 11, '4': 3, '5': 11, '6': '.transit_realtime.VehiclePosition.CarriageDetails', '10': 'multiCarriageDetails'},
+    {
+      '1': 'congestion_level',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehiclePosition.CongestionLevel',
+      '10': 'congestionLevel'
+    },
+    {
+      '1': 'occupancy_status',
+      '3': 9,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehiclePosition.OccupancyStatus',
+      '10': 'occupancyStatus'
+    },
+    {
+      '1': 'occupancy_percentage',
+      '3': 10,
+      '4': 1,
+      '5': 13,
+      '10': 'occupancyPercentage'
+    },
+    {
+      '1': 'multi_carriage_details',
+      '3': 11,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.VehiclePosition.CarriageDetails',
+      '10': 'multiCarriageDetails'
+    },
   ],
   '3': [VehiclePosition_CarriageDetails$json],
-  '4': [VehiclePosition_VehicleStopStatus$json, VehiclePosition_CongestionLevel$json, VehiclePosition_OccupancyStatus$json],
+  '4': [
+    VehiclePosition_VehicleStopStatus$json,
+    VehiclePosition_CongestionLevel$json,
+    VehiclePosition_OccupancyStatus$json
+  ],
   '5': [
     {'1': 1000, '2': 2000},
     {'1': 9000, '2': 10000},
@@ -243,9 +454,30 @@ const VehiclePosition_CarriageDetails$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'occupancy_status', '3': 3, '4': 1, '5': 14, '6': '.transit_realtime.VehiclePosition.OccupancyStatus', '7': 'NO_DATA_AVAILABLE', '10': 'occupancyStatus'},
-    {'1': 'occupancy_percentage', '3': 4, '4': 1, '5': 5, '7': '-1', '10': 'occupancyPercentage'},
-    {'1': 'carriage_sequence', '3': 5, '4': 1, '5': 13, '10': 'carriageSequence'},
+    {
+      '1': 'occupancy_status',
+      '3': 3,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehiclePosition.OccupancyStatus',
+      '7': 'NO_DATA_AVAILABLE',
+      '10': 'occupancyStatus'
+    },
+    {
+      '1': 'occupancy_percentage',
+      '3': 4,
+      '4': 1,
+      '5': 5,
+      '7': '-1',
+      '10': 'occupancyPercentage'
+    },
+    {
+      '1': 'carriage_sequence',
+      '3': 5,
+      '4': 1,
+      '5': 13,
+      '10': 'carriageSequence'
+    },
   ],
   '5': [
     {'1': 1000, '2': 2000},
@@ -325,20 +557,121 @@ final $typed_data.Uint8List vehiclePositionDescriptor = $convert.base64Decode(
 const Alert$json = {
   '1': 'Alert',
   '2': [
-    {'1': 'active_period', '3': 1, '4': 3, '5': 11, '6': '.transit_realtime.TimeRange', '10': 'activePeriod'},
-    {'1': 'informed_entity', '3': 5, '4': 3, '5': 11, '6': '.transit_realtime.EntitySelector', '10': 'informedEntity'},
-    {'1': 'cause', '3': 6, '4': 1, '5': 14, '6': '.transit_realtime.Alert.Cause', '7': 'UNKNOWN_CAUSE', '10': 'cause'},
-    {'1': 'effect', '3': 7, '4': 1, '5': 14, '6': '.transit_realtime.Alert.Effect', '7': 'UNKNOWN_EFFECT', '10': 'effect'},
-    {'1': 'url', '3': 8, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'url'},
-    {'1': 'header_text', '3': 10, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'headerText'},
-    {'1': 'description_text', '3': 11, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'descriptionText'},
-    {'1': 'tts_header_text', '3': 12, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'ttsHeaderText'},
-    {'1': 'tts_description_text', '3': 13, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'ttsDescriptionText'},
-    {'1': 'severity_level', '3': 14, '4': 1, '5': 14, '6': '.transit_realtime.Alert.SeverityLevel', '7': 'UNKNOWN_SEVERITY', '10': 'severityLevel'},
-    {'1': 'image', '3': 15, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedImage', '10': 'image'},
-    {'1': 'image_alternative_text', '3': 16, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'imageAlternativeText'},
-    {'1': 'cause_detail', '3': 17, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'causeDetail'},
-    {'1': 'effect_detail', '3': 18, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'effectDetail'},
+    {
+      '1': 'active_period',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TimeRange',
+      '10': 'activePeriod'
+    },
+    {
+      '1': 'informed_entity',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.EntitySelector',
+      '10': 'informedEntity'
+    },
+    {
+      '1': 'cause',
+      '3': 6,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.Alert.Cause',
+      '7': 'UNKNOWN_CAUSE',
+      '10': 'cause'
+    },
+    {
+      '1': 'effect',
+      '3': 7,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.Alert.Effect',
+      '7': 'UNKNOWN_EFFECT',
+      '10': 'effect'
+    },
+    {
+      '1': 'url',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'url'
+    },
+    {
+      '1': 'header_text',
+      '3': 10,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'headerText'
+    },
+    {
+      '1': 'description_text',
+      '3': 11,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'descriptionText'
+    },
+    {
+      '1': 'tts_header_text',
+      '3': 12,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'ttsHeaderText'
+    },
+    {
+      '1': 'tts_description_text',
+      '3': 13,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'ttsDescriptionText'
+    },
+    {
+      '1': 'severity_level',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.Alert.SeverityLevel',
+      '7': 'UNKNOWN_SEVERITY',
+      '10': 'severityLevel'
+    },
+    {
+      '1': 'image',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedImage',
+      '10': 'image'
+    },
+    {
+      '1': 'image_alternative_text',
+      '3': 16,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'imageAlternativeText'
+    },
+    {
+      '1': 'cause_detail',
+      '3': 17,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'causeDetail'
+    },
+    {
+      '1': 'effect_detail',
+      '3': 18,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'effectDetail'
+    },
   ],
   '4': [Alert_Cause$json, Alert_Effect$json, Alert_SeverityLevel$json],
   '5': [
@@ -476,8 +809,22 @@ const TripDescriptor$json = {
     {'1': 'direction_id', '3': 6, '4': 1, '5': 13, '10': 'directionId'},
     {'1': 'start_time', '3': 2, '4': 1, '5': 9, '10': 'startTime'},
     {'1': 'start_date', '3': 3, '4': 1, '5': 9, '10': 'startDate'},
-    {'1': 'schedule_relationship', '3': 4, '4': 1, '5': 14, '6': '.transit_realtime.TripDescriptor.ScheduleRelationship', '10': 'scheduleRelationship'},
-    {'1': 'modified_trip', '3': 7, '4': 1, '5': 11, '6': '.transit_realtime.TripDescriptor.ModifiedTripSelector', '10': 'modifiedTrip'},
+    {
+      '1': 'schedule_relationship',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.TripDescriptor.ScheduleRelationship',
+      '10': 'scheduleRelationship'
+    },
+    {
+      '1': 'modified_trip',
+      '3': 7,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripDescriptor.ModifiedTripSelector',
+      '10': 'modifiedTrip'
+    },
   ],
   '3': [TripDescriptor_ModifiedTripSelector$json],
   '4': [TripDescriptor_ScheduleRelationship$json],
@@ -536,7 +883,15 @@ const VehicleDescriptor$json = {
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'label', '3': 2, '4': 1, '5': 9, '10': 'label'},
     {'1': 'license_plate', '3': 3, '4': 1, '5': 9, '10': 'licensePlate'},
-    {'1': 'wheelchair_accessible', '3': 4, '4': 1, '5': 14, '6': '.transit_realtime.VehicleDescriptor.WheelchairAccessible', '7': 'NO_VALUE', '10': 'wheelchairAccessible'},
+    {
+      '1': 'wheelchair_accessible',
+      '3': 4,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.VehicleDescriptor.WheelchairAccessible',
+      '7': 'NO_VALUE',
+      '10': 'wheelchairAccessible'
+    },
   ],
   '4': [VehicleDescriptor_WheelchairAccessible$json],
   '5': [
@@ -573,7 +928,14 @@ const EntitySelector$json = {
     {'1': 'agency_id', '3': 1, '4': 1, '5': 9, '10': 'agencyId'},
     {'1': 'route_id', '3': 2, '4': 1, '5': 9, '10': 'routeId'},
     {'1': 'route_type', '3': 3, '4': 1, '5': 5, '10': 'routeType'},
-    {'1': 'trip', '3': 4, '4': 1, '5': 11, '6': '.transit_realtime.TripDescriptor', '10': 'trip'},
+    {
+      '1': 'trip',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TripDescriptor',
+      '10': 'trip'
+    },
     {'1': 'stop_id', '3': 5, '4': 1, '5': 9, '10': 'stopId'},
     {'1': 'direction_id', '3': 6, '4': 1, '5': 13, '10': 'directionId'},
   ],
@@ -595,7 +957,14 @@ final $typed_data.Uint8List entitySelectorDescriptor = $convert.base64Decode(
 const TranslatedString$json = {
   '1': 'TranslatedString',
   '2': [
-    {'1': 'translation', '3': 1, '4': 3, '5': 11, '6': '.transit_realtime.TranslatedString.Translation', '10': 'translation'},
+    {
+      '1': 'translation',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString.Translation',
+      '10': 'translation'
+    },
   ],
   '3': [TranslatedString_Translation$json],
   '5': [
@@ -628,7 +997,14 @@ final $typed_data.Uint8List translatedStringDescriptor = $convert.base64Decode(
 const TranslatedImage$json = {
   '1': 'TranslatedImage',
   '2': [
-    {'1': 'localized_image', '3': 1, '4': 3, '5': 11, '6': '.transit_realtime.TranslatedImage.LocalizedImage', '10': 'localizedImage'},
+    {
+      '1': 'localized_image',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedImage.LocalizedImage',
+      '10': 'localizedImage'
+    },
   ],
   '3': [TranslatedImage_LocalizedImage$json],
   '5': [
@@ -682,19 +1058,69 @@ const Stop$json = {
   '1': 'Stop',
   '2': [
     {'1': 'stop_id', '3': 1, '4': 1, '5': 9, '10': 'stopId'},
-    {'1': 'stop_code', '3': 2, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'stopCode'},
-    {'1': 'stop_name', '3': 3, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'stopName'},
-    {'1': 'tts_stop_name', '3': 4, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'ttsStopName'},
-    {'1': 'stop_desc', '3': 5, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'stopDesc'},
+    {
+      '1': 'stop_code',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'stopCode'
+    },
+    {
+      '1': 'stop_name',
+      '3': 3,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'stopName'
+    },
+    {
+      '1': 'tts_stop_name',
+      '3': 4,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'ttsStopName'
+    },
+    {
+      '1': 'stop_desc',
+      '3': 5,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'stopDesc'
+    },
     {'1': 'stop_lat', '3': 6, '4': 1, '5': 2, '10': 'stopLat'},
     {'1': 'stop_lon', '3': 7, '4': 1, '5': 2, '10': 'stopLon'},
     {'1': 'zone_id', '3': 8, '4': 1, '5': 9, '10': 'zoneId'},
-    {'1': 'stop_url', '3': 9, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'stopUrl'},
+    {
+      '1': 'stop_url',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'stopUrl'
+    },
     {'1': 'parent_station', '3': 11, '4': 1, '5': 9, '10': 'parentStation'},
     {'1': 'stop_timezone', '3': 12, '4': 1, '5': 9, '10': 'stopTimezone'},
-    {'1': 'wheelchair_boarding', '3': 13, '4': 1, '5': 14, '6': '.transit_realtime.Stop.WheelchairBoarding', '7': 'UNKNOWN', '10': 'wheelchairBoarding'},
+    {
+      '1': 'wheelchair_boarding',
+      '3': 13,
+      '4': 1,
+      '5': 14,
+      '6': '.transit_realtime.Stop.WheelchairBoarding',
+      '7': 'UNKNOWN',
+      '10': 'wheelchairBoarding'
+    },
     {'1': 'level_id', '3': 14, '4': 1, '5': 9, '10': 'levelId'},
-    {'1': 'platform_code', '3': 15, '4': 1, '5': 11, '6': '.transit_realtime.TranslatedString', '10': 'platformCode'},
+    {
+      '1': 'platform_code',
+      '3': 15,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.TranslatedString',
+      '10': 'platformCode'
+    },
   ],
   '4': [Stop_WheelchairBoarding$json],
   '5': [
@@ -735,12 +1161,29 @@ final $typed_data.Uint8List stopDescriptor = $convert.base64Decode(
 const TripModifications$json = {
   '1': 'TripModifications',
   '2': [
-    {'1': 'selected_trips', '3': 1, '4': 3, '5': 11, '6': '.transit_realtime.TripModifications.SelectedTrips', '10': 'selectedTrips'},
+    {
+      '1': 'selected_trips',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TripModifications.SelectedTrips',
+      '10': 'selectedTrips'
+    },
     {'1': 'start_times', '3': 2, '4': 3, '5': 9, '10': 'startTimes'},
     {'1': 'service_dates', '3': 3, '4': 3, '5': 9, '10': 'serviceDates'},
-    {'1': 'modifications', '3': 4, '4': 3, '5': 11, '6': '.transit_realtime.TripModifications.Modification', '10': 'modifications'},
+    {
+      '1': 'modifications',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.TripModifications.Modification',
+      '10': 'modifications'
+    },
   ],
-  '3': [TripModifications_Modification$json, TripModifications_SelectedTrips$json],
+  '3': [
+    TripModifications_Modification$json,
+    TripModifications_SelectedTrips$json
+  ],
   '5': [
     {'1': 1000, '2': 2000},
     {'1': 9000, '2': 10000},
@@ -751,12 +1194,46 @@ const TripModifications$json = {
 const TripModifications_Modification$json = {
   '1': 'Modification',
   '2': [
-    {'1': 'start_stop_selector', '3': 1, '4': 1, '5': 11, '6': '.transit_realtime.StopSelector', '10': 'startStopSelector'},
-    {'1': 'end_stop_selector', '3': 2, '4': 1, '5': 11, '6': '.transit_realtime.StopSelector', '10': 'endStopSelector'},
-    {'1': 'propagated_modification_delay', '3': 3, '4': 1, '5': 5, '7': '0', '10': 'propagatedModificationDelay'},
-    {'1': 'replacement_stops', '3': 4, '4': 3, '5': 11, '6': '.transit_realtime.ReplacementStop', '10': 'replacementStops'},
+    {
+      '1': 'start_stop_selector',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.StopSelector',
+      '10': 'startStopSelector'
+    },
+    {
+      '1': 'end_stop_selector',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.transit_realtime.StopSelector',
+      '10': 'endStopSelector'
+    },
+    {
+      '1': 'propagated_modification_delay',
+      '3': 3,
+      '4': 1,
+      '5': 5,
+      '7': '0',
+      '10': 'propagatedModificationDelay'
+    },
+    {
+      '1': 'replacement_stops',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.transit_realtime.ReplacementStop',
+      '10': 'replacementStops'
+    },
     {'1': 'service_alert_id', '3': 5, '4': 1, '5': 9, '10': 'serviceAlertId'},
-    {'1': 'last_modified_time', '3': 6, '4': 1, '5': 4, '10': 'lastModifiedTime'},
+    {
+      '1': 'last_modified_time',
+      '3': 6,
+      '4': 1,
+      '5': 4,
+      '10': 'lastModifiedTime'
+    },
   ],
   '5': [
     {'1': 1000, '2': 2000},
@@ -817,7 +1294,13 @@ final $typed_data.Uint8List stopSelectorDescriptor = $convert.base64Decode(
 const ReplacementStop$json = {
   '1': 'ReplacementStop',
   '2': [
-    {'1': 'travel_time_to_stop', '3': 1, '4': 1, '5': 5, '10': 'travelTimeToStop'},
+    {
+      '1': 'travel_time_to_stop',
+      '3': 1,
+      '4': 1,
+      '5': 5,
+      '10': 'travelTimeToStop'
+    },
     {'1': 'stop_id', '3': 2, '4': 1, '5': 9, '10': 'stopId'},
   ],
   '5': [
@@ -830,4 +1313,3 @@ const ReplacementStop$json = {
 final $typed_data.Uint8List replacementStopDescriptor = $convert.base64Decode(
     'Cg9SZXBsYWNlbWVudFN0b3ASLQoTdHJhdmVsX3RpbWVfdG9fc3RvcBgBIAEoBVIQdHJhdmVsVG'
     'ltZVRvU3RvcBIXCgdzdG9wX2lkGAIgASgJUgZzdG9wSWQqBgjoBxDQDyoGCKhGEJBO');
-

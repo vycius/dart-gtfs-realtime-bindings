@@ -21,10 +21,27 @@ if (response.statusCode == 200) {
 }
 ```
 
+### Extensions
+
+The repository comes with some GTFS-RT spec extensions from various transit agencies. Here is how to use them:
+
+```dart
+// Register the extensions you want to parse.
+final extensionRegistry = ExtensionRegistry();
+New_york_mta_extension.registerAllExtensions(extensionRegistry);
+
+// Parse the binary proto.
+final feedMessage = FeedMessage.fromBuffer(bytes, extensionRegistry);
+
+// Read the extension.
+final mtaStopTimeUpdate = stopTimeUpdate
+    .getExtension(New_york_mta_extension.mtaRailroadStopTimeUpdate);
+```
+
 ## Generation
 
 The Protobuf spec is downloaded from <https://gtfs.org/realtime/proto/>.
 
-The Dart code is generated using: `protoc --dart_out=lib/src gtfs-realtime.proto`
+The Dart code is generated using: `protoc --dart_out=lib/src gtfs-realtime.proto new-york-mta-extension.proto`
 
 Note that this requires installing the binaries at <https://protobuf.dev/getting-started/darttutorial/#compiling-protocol-buffers>.
