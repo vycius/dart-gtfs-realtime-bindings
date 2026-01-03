@@ -1,19 +1,22 @@
+// This is a generated file - do not edit.
 //
-//  Generated code. Do not modify.
-//  source: new-york-mta-extension.proto
-//
-// @dart = 2.12
+// Generated from new-york-mta-extension.proto.
+
+// @dart = 3.3
 
 // ignore_for_file: annotate_overrides, camel_case_types, comment_references
-// ignore_for_file: constant_identifier_names, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_final_fields
-// ignore_for_file: unnecessary_import, unnecessary_this, unused_import
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: curly_braces_in_flow_control_structures
+// ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
+// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
 
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import 'new-york-mta-extension.pbenum.dart';
+
+export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
 export 'new-york-mta-extension.pbenum.dart';
 
@@ -22,22 +25,20 @@ class MtaRailroadStopTimeUpdate extends $pb.GeneratedMessage {
     $core.String? track,
     $core.String? trainStatus,
   }) {
-    final $result = create();
-    if (track != null) {
-      $result.track = track;
-    }
-    if (trainStatus != null) {
-      $result.trainStatus = trainStatus;
-    }
-    return $result;
+    final result = create();
+    if (track != null) result.track = track;
+    if (trainStatus != null) result.trainStatus = trainStatus;
+    return result;
   }
-  MtaRailroadStopTimeUpdate._() : super();
-  factory MtaRailroadStopTimeUpdate.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MtaRailroadStopTimeUpdate.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MtaRailroadStopTimeUpdate._();
+
+  factory MtaRailroadStopTimeUpdate.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MtaRailroadStopTimeUpdate.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MtaRailroadStopTimeUpdate',
@@ -48,26 +49,21 @@ class MtaRailroadStopTimeUpdate extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'trainStatus', protoName: 'trainStatus')
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  MtaRailroadStopTimeUpdate clone() =>
-      MtaRailroadStopTimeUpdate()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  MtaRailroadStopTimeUpdate clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MtaRailroadStopTimeUpdate copyWith(
           void Function(MtaRailroadStopTimeUpdate) updates) =>
       super.copyWith((message) => updates(message as MtaRailroadStopTimeUpdate))
           as MtaRailroadStopTimeUpdate;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MtaRailroadStopTimeUpdate create() => MtaRailroadStopTimeUpdate._();
+  @$core.override
   MtaRailroadStopTimeUpdate createEmptyInstance() => create();
-  static $pb.PbList<MtaRailroadStopTimeUpdate> createRepeated() =>
-      $pb.PbList<MtaRailroadStopTimeUpdate>();
   @$core.pragma('dart2js:noInline')
   static MtaRailroadStopTimeUpdate getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MtaRailroadStopTimeUpdate>(create);
@@ -76,26 +72,20 @@ class MtaRailroadStopTimeUpdate extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get track => $_getSZ(0);
   @$pb.TagNumber(1)
-  set track($core.String v) {
-    $_setString(0, v);
-  }
-
+  set track($core.String value) => $_setString(0, value);
   @$pb.TagNumber(1)
   $core.bool hasTrack() => $_has(0);
   @$pb.TagNumber(1)
-  void clearTrack() => clearField(1);
+  void clearTrack() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get trainStatus => $_getSZ(1);
   @$pb.TagNumber(2)
-  set trainStatus($core.String v) {
-    $_setString(1, v);
-  }
-
+  set trainStatus($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasTrainStatus() => $_has(1);
   @$pb.TagNumber(2)
-  void clearTrainStatus() => clearField(2);
+  void clearTrainStatus() => $_clearField(2);
 }
 
 class MtaRailroadCarriageDetails extends $pb.GeneratedMessage {
@@ -105,72 +95,58 @@ class MtaRailroadCarriageDetails extends $pb.GeneratedMessage {
     MtaRailroadCarriageDetails_QuietCarriage? quietCarriage,
     MtaRailroadCarriageDetails_ToiletFacilities? toiletFacilities,
   }) {
-    final $result = create();
-    if (bicyclesAllowed != null) {
-      $result.bicyclesAllowed = bicyclesAllowed;
-    }
-    if (carriageClass != null) {
-      $result.carriageClass = carriageClass;
-    }
-    if (quietCarriage != null) {
-      $result.quietCarriage = quietCarriage;
-    }
-    if (toiletFacilities != null) {
-      $result.toiletFacilities = toiletFacilities;
-    }
-    return $result;
+    final result = create();
+    if (bicyclesAllowed != null) result.bicyclesAllowed = bicyclesAllowed;
+    if (carriageClass != null) result.carriageClass = carriageClass;
+    if (quietCarriage != null) result.quietCarriage = quietCarriage;
+    if (toiletFacilities != null) result.toiletFacilities = toiletFacilities;
+    return result;
   }
-  MtaRailroadCarriageDetails._() : super();
-  factory MtaRailroadCarriageDetails.fromBuffer($core.List<$core.int> i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(i, r);
-  factory MtaRailroadCarriageDetails.fromJson($core.String i,
-          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(i, r);
+
+  MtaRailroadCarriageDetails._();
+
+  factory MtaRailroadCarriageDetails.fromBuffer($core.List<$core.int> data,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(data, registry);
+  factory MtaRailroadCarriageDetails.fromJson($core.String json,
+          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(json, registry);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
       _omitMessageNames ? '' : 'MtaRailroadCarriageDetails',
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'transit_realtime'),
       createEmptyInstance: create)
-    ..a<$core.int>(
-        1, _omitFieldNames ? '' : 'bicyclesAllowed', $pb.PbFieldType.O3)
+    ..aI(1, _omitFieldNames ? '' : 'bicyclesAllowed')
     ..aOS(2, _omitFieldNames ? '' : 'carriageClass')
-    ..e<MtaRailroadCarriageDetails_QuietCarriage>(
-        3, _omitFieldNames ? '' : 'quietCarriage', $pb.PbFieldType.OE,
+    ..aE<MtaRailroadCarriageDetails_QuietCarriage>(
+        3, _omitFieldNames ? '' : 'quietCarriage',
         defaultOrMaker:
             MtaRailroadCarriageDetails_QuietCarriage.UNKNOWN_QUIET_CARRIAGE,
-        valueOf: MtaRailroadCarriageDetails_QuietCarriage.valueOf,
         enumValues: MtaRailroadCarriageDetails_QuietCarriage.values)
-    ..e<MtaRailroadCarriageDetails_ToiletFacilities>(
-        4, _omitFieldNames ? '' : 'toiletFacilities', $pb.PbFieldType.OE,
+    ..aE<MtaRailroadCarriageDetails_ToiletFacilities>(
+        4, _omitFieldNames ? '' : 'toiletFacilities',
         defaultOrMaker: MtaRailroadCarriageDetails_ToiletFacilities
             .UNKNOWN_TOILET_FACILITIES,
-        valueOf: MtaRailroadCarriageDetails_ToiletFacilities.valueOf,
         enumValues: MtaRailroadCarriageDetails_ToiletFacilities.values)
     ..hasRequiredFields = false;
 
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-      'Will be removed in next major version')
-  MtaRailroadCarriageDetails clone() =>
-      MtaRailroadCarriageDetails()..mergeFromMessage(this);
-  @$core.Deprecated('Using this can add significant overhead to your binary. '
-      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-      'Will be removed in next major version')
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
+  MtaRailroadCarriageDetails clone() => deepCopy();
+  @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   MtaRailroadCarriageDetails copyWith(
           void Function(MtaRailroadCarriageDetails) updates) =>
       super.copyWith(
               (message) => updates(message as MtaRailroadCarriageDetails))
           as MtaRailroadCarriageDetails;
 
+  @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static MtaRailroadCarriageDetails create() => MtaRailroadCarriageDetails._();
+  @$core.override
   MtaRailroadCarriageDetails createEmptyInstance() => create();
-  static $pb.PbList<MtaRailroadCarriageDetails> createRepeated() =>
-      $pb.PbList<MtaRailroadCarriageDetails>();
   @$core.pragma('dart2js:noInline')
   static MtaRailroadCarriageDetails getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<MtaRailroadCarriageDetails>(create);
@@ -181,51 +157,41 @@ class MtaRailroadCarriageDetails extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.int get bicyclesAllowed => $_getIZ(0);
   @$pb.TagNumber(1)
-  set bicyclesAllowed($core.int v) {
-    $_setSignedInt32(0, v);
-  }
-
+  set bicyclesAllowed($core.int value) => $_setSignedInt32(0, value);
   @$pb.TagNumber(1)
   $core.bool hasBicyclesAllowed() => $_has(0);
   @$pb.TagNumber(1)
-  void clearBicyclesAllowed() => clearField(1);
+  void clearBicyclesAllowed() => $_clearField(1);
 
   /// A description of the carriage type/model.
   @$pb.TagNumber(2)
   $core.String get carriageClass => $_getSZ(1);
   @$pb.TagNumber(2)
-  set carriageClass($core.String v) {
-    $_setString(1, v);
-  }
-
+  set carriageClass($core.String value) => $_setString(1, value);
   @$pb.TagNumber(2)
   $core.bool hasCarriageClass() => $_has(1);
   @$pb.TagNumber(2)
-  void clearCarriageClass() => clearField(2);
+  void clearCarriageClass() => $_clearField(2);
 
   @$pb.TagNumber(3)
   MtaRailroadCarriageDetails_QuietCarriage get quietCarriage => $_getN(2);
   @$pb.TagNumber(3)
-  set quietCarriage(MtaRailroadCarriageDetails_QuietCarriage v) {
-    setField(3, v);
-  }
-
+  set quietCarriage(MtaRailroadCarriageDetails_QuietCarriage value) =>
+      $_setField(3, value);
   @$pb.TagNumber(3)
   $core.bool hasQuietCarriage() => $_has(2);
   @$pb.TagNumber(3)
-  void clearQuietCarriage() => clearField(3);
+  void clearQuietCarriage() => $_clearField(3);
 
   @$pb.TagNumber(4)
   MtaRailroadCarriageDetails_ToiletFacilities get toiletFacilities => $_getN(3);
   @$pb.TagNumber(4)
-  set toiletFacilities(MtaRailroadCarriageDetails_ToiletFacilities v) {
-    setField(4, v);
-  }
-
+  set toiletFacilities(MtaRailroadCarriageDetails_ToiletFacilities value) =>
+      $_setField(4, value);
   @$pb.TagNumber(4)
   $core.bool hasToiletFacilities() => $_has(3);
   @$pb.TagNumber(4)
-  void clearToiletFacilities() => clearField(4);
+  void clearToiletFacilities() => $_clearField(4);
 }
 
 class New_york_mta_extension {
@@ -253,6 +219,7 @@ class New_york_mta_extension {
   }
 }
 
-const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames =
+const $core.bool _omitFieldNames =
+    $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames =
     $core.bool.fromEnvironment('protobuf.omit_message_names');
