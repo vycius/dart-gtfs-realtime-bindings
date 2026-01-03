@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   fixnum: ^1.1.1
-  protobuf: ^5.0.0
+  protobuf: ^6.0.0
 
 dev_dependencies:
   http: ^1.5.0
